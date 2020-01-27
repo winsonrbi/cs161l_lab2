@@ -31,13 +31,13 @@ wire [31:0] floatresult;
 wire[31:0]fixresult;
 
 fixedToFloat fixedToFloat_inst(
+	.clk (clk),
 	.fixpointpos (fixpointpos),
 	.targetnumber (targetnumber),
 	.result (floatresult)
 );
 
 always @(posedge clk) begin
-	$display("Check");
 	$display(floatresult);
 	result <= opcode == 1? fixresult : floatresult;
 end

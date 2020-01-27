@@ -1,0 +1,401 @@
+Release 14.6 - xst P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: fixedFloatConversion.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "fixedFloatConversion.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "fixedFloatConversion"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-tq144
+
+---- Source Options
+Top Module Name                    : fixedFloatConversion
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "fixedFloatConversion.v" in library work
+Compiling verilog include file "fixedToFloat.v"
+Module <fixedToFloat> compiled
+Module <fixedFloatConversion> compiled
+No errors in compilation
+Analysis of file <"fixedFloatConversion.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <fixedFloatConversion> in library <work>.
+
+Analyzing hierarchy for module <fixedToFloat> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <fixedFloatConversion>.
+WARNING:Xst:2323 - "fixedFloatConversion.v" line 41: Parameter 1 is not constant in call of system task $display.
+"fixedFloatConversion.v" line 41: $display : 
+Module <fixedFloatConversion> is correct for synthesis.
+ 
+Analyzing module <fixedToFloat> in library <work>.
+WARNING:Xst:2323 - "fixedToFloat.v" line 38: Parameter 2 is not constant in call of system task $display.
+"fixedToFloat.v" line 38: $display : Entered fixed point %b
+"fixedToFloat.v" line 59: $display : leadpos value is 31
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 30
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 29
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 28
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 27
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 26
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 25
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 24
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 23
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 22
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 21
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 20
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 19
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 18
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 17
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 16
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 15
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 14
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 13
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 12
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 11
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 10
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 9
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 8
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 7
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 6
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 5
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 4
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 3
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 2
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 1
+"fixedToFloat.v" line 70: $display : Leadpos Error
+"fixedToFloat.v" line 59: $display : leadpos value is 0
+WARNING:Xst:2323 - "fixedToFloat.v" line 84: Parameter 2 is not constant in call of system task $display.
+"fixedToFloat.v" line 84: $display : biased_exponent is %d
+Module <fixedToFloat> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <result> in unit <fixedToFloat> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <i> in unit <fixedToFloat> has a constant value of 11111111111111111111111111111111 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <fixedToFloat>.
+    Related source file is "fixedToFloat.v".
+WARNING:Xst:646 - Signal <sign> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <pos_val> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <leadpos> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <fraction> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <biased_exponent> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <fixedToFloat> synthesized.
+
+
+Synthesizing Unit <fixedFloatConversion>.
+    Related source file is "fixedFloatConversion.v".
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <fixresult> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+    Found 32-bit register for signal <result>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <fixedFloatConversion> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1
+ 32-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <fixedToFloat_inst> is unconnected in block <fixedFloatConversion>.
+   It will be removed from the design.
+WARNING:Xst:1710 - FF/Latch <result_31> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_30> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_29> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_28> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_27> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_26> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_25> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_24> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_23> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_22> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_21> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_20> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_19> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_18> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_17> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_16> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_15> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_14> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_13> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_12> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_11> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_10> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_9> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_8> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_7> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_6> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_5> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_4> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_3> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_2> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_1> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_0> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <result_0> in Unit <fixedFloatConversion> is equivalent to the following 31 FFs/Latches, which will be removed : <result_1> <result_2> <result_3> <result_4> <result_5> <result_6> <result_7> <result_8> <result_9> <result_10> <result_11> <result_12> <result_13> <result_14> <result_15> <result_16> <result_17> <result_18> <result_19> <result_20> <result_21> <result_22> <result_23> <result_24> <result_25> <result_26> <result_27> <result_28> <result_29> <result_30> <result_31> 
+WARNING:Xst:1710 - FF/Latch <result_0> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <fixedFloatConversion> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block fixedFloatConversion, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : fixedFloatConversion.ngr
+Top Level Output File Name         : fixedFloatConversion
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 72
+
+Cell Usage :
+# BELS                             : 1
+#      GND                         : 1
+# IO Buffers                       : 32
+#      OBUF                        : 32
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100etq144-5 
+
+ Number of Slices:                        0  out of    960     0%  
+ Number of IOs:                          72
+ Number of bonded IOBs:                  32  out of    108    29%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.03 secs
+ 
+--> 
+
+
+Total memory usage is 611552 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   44 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+
