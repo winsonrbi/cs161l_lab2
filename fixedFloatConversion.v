@@ -19,6 +19,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 `include "fixedToFloat.v"
+`include "floatToFix.v"
 module fixedFloatConversion(
     input wire clk,
     input wire rst,
@@ -30,6 +31,12 @@ module fixedFloatConversion(
 wire [31:0] floatresult;
 wire[31:0]fixresult;
 
+floatToFix floatToFix_inst(
+	.clk (clk),
+	.fixpointpos (fixpointpos),
+	.targetnumber (targetnumber),
+	.result (fixresult)
+);
 fixedToFloat fixedToFloat_inst(
 	.clk (clk),
 	.fixpointpos (fixpointpos),
@@ -38,7 +45,6 @@ fixedToFloat fixedToFloat_inst(
 );
 
 always @(posedge clk) begin
-	$display(floatresult);
 	result <= opcode == 1? fixresult : floatresult;
 end
 endmodule

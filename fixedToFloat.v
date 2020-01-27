@@ -36,7 +36,6 @@ always @ (posedge clk)
 begin
 //Perform fixed to float conversion
 //Check if zero
-	$display("Entered fixed point %b",targetnumber);
 	if( targetnumber == 3'd0)begin
 		result = 32'h00000000;
 	end
@@ -57,7 +56,6 @@ begin
 		for(i=31; i>-1; i=i-1)begin
 			if(pos_val[i] == 1'b1 && leadpos == 0)begin
 				leadpos = i;
-				$display("leadpos value is %d", leadpos);
 				if(leadpos == 5'b00000) begin
 					fraction = 23'b00000000000000000000000;
 				end

@@ -22,140 +22,109 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="lab2.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
-    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
-    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
-    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
-    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
-    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="fixedFloatConversion.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="fixedFloatConversion.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="fixedFloatConversion.lso"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="fixedFloatConversion.ncd" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="fixedFloatConversion.ngc"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="fixedFloatConversion.ngd"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="fixedFloatConversion.ngr"/>
-    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="fixedFloatConversion.pad"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="fixedFloatConversion.par" xil_pn:subbranch="Par"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="fixedFloatConversion.pcf" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="fixedFloatConversion.prj"/>
-    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="fixedFloatConversion.ptwx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="fixedFloatConversion.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="fixedFloatConversion.syr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="fixedFloatConversion.twr" xil_pn:subbranch="Par"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="fixedFloatConversion.twx" xil_pn:subbranch="Par"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="fixedFloatConversion.unroutes" xil_pn:subbranch="Par"/>
-    <file xil_pn:fileType="FILE_XPI" xil_pn:name="fixedFloatConversion.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="fixedFloatConversion.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="fixedFloatConversion_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="fixedFloatConversion_guide.ncd" xil_pn:origination="imported"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="fixedFloatConversion_map.map" xil_pn:subbranch="Map"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="fixedFloatConversion_map.mrp" xil_pn:subbranch="Map"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="fixedFloatConversion_map.ncd" xil_pn:subbranch="Map"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="fixedFloatConversion_map.ngm" xil_pn:subbranch="Map"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="fixedFloatConversion_map.xrpt"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="fixedFloatConversion_ngdbuild.xrpt"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="fixedFloatConversion_pad.csv" xil_pn:subbranch="Par"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="fixedFloatConversion_pad.txt" xil_pn:subbranch="Par"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="fixedFloatConversion_par.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="fixedFloatConversion_summary.html"/>
-    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="fixedFloatConversion_summary.xml"/>
-    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="fixedFloatConversion_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="fixedFloatConversion_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="lab2_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="lab2_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="lab2_tb_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="lab2_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
-    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1580096551" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1580096551">
+    <transform xil_pn:end_ts="1580107636" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1580107636">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1580102310" xil_pn:in_ck="8845822475527054551" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1580102310">
+    <transform xil_pn:end_ts="1580111883" xil_pn:in_ck="2283273238538870427" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1580111883">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fixedFloatConversion.v"/>
       <outfile xil_pn:name="fixedToFloat.v"/>
+      <outfile xil_pn:name="floatToFix.v"/>
       <outfile xil_pn:name="lab2_tb.v"/>
     </transform>
-    <transform xil_pn:end_ts="1580096551" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7301254564271938637" xil_pn:start_ts="1580096551">
+    <transform xil_pn:end_ts="1580107636" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7301254564271938637" xil_pn:start_ts="1580107636">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1580096551" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4935041176624527921" xil_pn:start_ts="1580096551">
+    <transform xil_pn:end_ts="1580107636" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4935041176624527921" xil_pn:start_ts="1580107636">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1580096551" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="4150581552323054148" xil_pn:start_ts="1580096551">
+    <transform xil_pn:end_ts="1580107636" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="4150581552323054148" xil_pn:start_ts="1580107636">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1580102310" xil_pn:in_ck="8845822475527054551" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1580102310">
+    <transform xil_pn:end_ts="1580111883" xil_pn:in_ck="2283273238538870427" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1580111883">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fixedFloatConversion.v"/>
       <outfile xil_pn:name="fixedToFloat.v"/>
+      <outfile xil_pn:name="floatToFix.v"/>
       <outfile xil_pn:name="lab2_tb.v"/>
     </transform>
-    <transform xil_pn:end_ts="1580102311" xil_pn:in_ck="8845822475527054551" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="449039373255583355" xil_pn:start_ts="1580102310">
-      <status xil_pn:value="FailedRun"/>
+    <transform xil_pn:end_ts="1580111885" xil_pn:in_ck="2283273238538870427" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="449039373255583355" xil_pn:start_ts="1580111883">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="lab2_tb_beh.prj"/>
+      <outfile xil_pn:name="lab2_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1580097422" xil_pn:in_ck="-8961381660548368891" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5186840607282720674" xil_pn:start_ts="1580097422">
-      <status xil_pn:value="AbortedRun"/>
+    <transform xil_pn:end_ts="1580111885" xil_pn:in_ck="-8961381660548368891" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5186840607282720674" xil_pn:start_ts="1580111885">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForced"/>
       <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="lab2_tb_isim_beh.wdb"/>
     </transform>
-    <transform xil_pn:end_ts="1580099243" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1580099243">
+    <transform xil_pn:end_ts="1580107251" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="8096453347753509157" xil_pn:start_ts="1580107251">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1580099243" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="8096453347753509157" xil_pn:start_ts="1580099243">
+    <transform xil_pn:end_ts="1580107251" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="4150581552323054148" xil_pn:start_ts="1580107251">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1580099243" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="4150581552323054148" xil_pn:start_ts="1580099243">
+    <transform xil_pn:end_ts="1580107251" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1580107251">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1580099243" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1580099243">
+    <transform xil_pn:end_ts="1580107251" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="7751148216548783843" xil_pn:start_ts="1580107251">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1580099243" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="7751148216548783843" xil_pn:start_ts="1580099243">
+    <transform xil_pn:end_ts="1580107251" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="2988080280842703814" xil_pn:start_ts="1580107251">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1580099243" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="2988080280842703814" xil_pn:start_ts="1580099243">
+    <transform xil_pn:end_ts="1580107251" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="2904886025997076046" xil_pn:start_ts="1580107251">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1580099243" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="2904886025997076046" xil_pn:start_ts="1580099243">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1580102382" xil_pn:in_ck="-4283750349584510435" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="7823565295169894007" xil_pn:start_ts="1580102360">
+    <transform xil_pn:end_ts="1580111902" xil_pn:in_ck="-704054186488553631" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="7823565295169894007" xil_pn:start_ts="1580111873">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -170,58 +139,6 @@
       <outfile xil_pn:name="fixedFloatConversion_xst.xrpt"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
-    </transform>
-    <transform xil_pn:end_ts="1580097559" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-6221262834988759794" xil_pn:start_ts="1580097559">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1580099923" xil_pn:in_ck="1218870984114117010" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-2598959573173239801" xil_pn:start_ts="1580099919">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="_ngo"/>
-      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
-      <outfile xil_pn:name="fixedFloatConversion.bld"/>
-      <outfile xil_pn:name="fixedFloatConversion.ngd"/>
-      <outfile xil_pn:name="fixedFloatConversion_ngdbuild.xrpt"/>
-    </transform>
-    <transform xil_pn:end_ts="1580099927" xil_pn:in_ck="1218870984114117011" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-6349267131326700252" xil_pn:start_ts="1580099923">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
-      <outfile xil_pn:name="fixedFloatConversion.pcf"/>
-      <outfile xil_pn:name="fixedFloatConversion_map.map"/>
-      <outfile xil_pn:name="fixedFloatConversion_map.mrp"/>
-      <outfile xil_pn:name="fixedFloatConversion_map.ncd"/>
-      <outfile xil_pn:name="fixedFloatConversion_map.ngm"/>
-      <outfile xil_pn:name="fixedFloatConversion_map.xrpt"/>
-      <outfile xil_pn:name="fixedFloatConversion_summary.xml"/>
-      <outfile xil_pn:name="fixedFloatConversion_usage.xml"/>
-    </transform>
-    <transform xil_pn:end_ts="1580099932" xil_pn:in_ck="-2169262195911394772" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1580099927">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
-      <outfile xil_pn:name="fixedFloatConversion.ncd"/>
-      <outfile xil_pn:name="fixedFloatConversion.pad"/>
-      <outfile xil_pn:name="fixedFloatConversion.par"/>
-      <outfile xil_pn:name="fixedFloatConversion.ptwx"/>
-      <outfile xil_pn:name="fixedFloatConversion.unroutes"/>
-      <outfile xil_pn:name="fixedFloatConversion.xpi"/>
-      <outfile xil_pn:name="fixedFloatConversion_pad.csv"/>
-      <outfile xil_pn:name="fixedFloatConversion_pad.txt"/>
-      <outfile xil_pn:name="fixedFloatConversion_par.xrpt"/>
-    </transform>
-    <transform xil_pn:end_ts="1580099932" xil_pn:in_ck="1218870984114116879" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1580099930">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
-      <outfile xil_pn:name="fixedFloatConversion.twr"/>
-      <outfile xil_pn:name="fixedFloatConversion.twx"/>
     </transform>
   </transforms>
 

@@ -2,9 +2,9 @@ Command line:
    lab2_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  37133
+     -socket  52560
 
-Sun Jan 26 20:53:15 2020
+Mon Jan 27 00:15:10 2020
 
 
- Elaboration Time: 0.03 sec
+ Elaboration Time: 0.02 sec

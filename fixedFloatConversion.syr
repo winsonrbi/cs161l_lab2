@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Reading design: fixedFloatConversion.prj
@@ -109,7 +109,9 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 Compiling verilog file "fixedFloatConversion.v" in library work
 Compiling verilog include file "fixedToFloat.v"
+Compiling verilog include file "floatToFix.v"
 Module <fixedToFloat> compiled
+Module <floatToFix> compiled
 Module <fixedFloatConversion> compiled
 No errors in compilation
 Analysis of file <"fixedFloatConversion.prj"> succeeded.
@@ -120,6 +122,8 @@ Analysis of file <"fixedFloatConversion.prj"> succeeded.
 =========================================================================
 Analyzing hierarchy for module <fixedFloatConversion> in library <work>.
 
+Analyzing hierarchy for module <floatToFix> in library <work>.
+
 Analyzing hierarchy for module <fixedToFloat> in library <work>.
 
 
@@ -127,76 +131,57 @@ Analyzing hierarchy for module <fixedToFloat> in library <work>.
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing top module <fixedFloatConversion>.
-WARNING:Xst:2323 - "fixedFloatConversion.v" line 41: Parameter 1 is not constant in call of system task $display.
-"fixedFloatConversion.v" line 41: $display : 
 Module <fixedFloatConversion> is correct for synthesis.
  
+Analyzing module <floatToFix> in library <work>.
+WARNING:Xst:2323 - "floatToFix.v" line 49: Parameter 2 is not constant in call of system task $display.
+"floatToFix.v" line 49: $display : Target number is %b
+WARNING:Xst:2323 - "floatToFix.v" line 50: Parameter 2 is not constant in call of system task $display.
+"floatToFix.v" line 50: $display : Sign is %b
+WARNING:Xst:2323 - "floatToFix.v" line 51: Parameter 2 is not constant in call of system task $display.
+"floatToFix.v" line 51: $display : Bias_exponent is %b
+WARNING:Xst:2323 - "floatToFix.v" line 52: Parameter 2 is not constant in call of system task $display.
+"floatToFix.v" line 52: $display : Fraction is %b
+WARNING:Xst:2323 - "floatToFix.v" line 61: Parameter 2 is not constant in call of system task $display.
+"floatToFix.v" line 61: $display : Biased exponent is %d
+WARNING:Xst:2323 - "floatToFix.v" line 62: Parameter 2 is not constant in call of system task $display.
+"floatToFix.v" line 62: $display : Removed is is %d
+WARNING:Xst:2323 - "floatToFix.v" line 63: Parameter 2 is not constant in call of system task $display.
+"floatToFix.v" line 63: $display : Result is %b
+Module <floatToFix> is correct for synthesis.
+ 
 Analyzing module <fixedToFloat> in library <work>.
-WARNING:Xst:2323 - "fixedToFloat.v" line 39: Parameter 2 is not constant in call of system task $display.
-"fixedToFloat.v" line 39: $display : Entered fixed point %b
-"fixedToFloat.v" line 60: $display : leadpos value is 31
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 30
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 29
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 28
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 27
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 26
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 25
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 24
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 23
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 22
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 21
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 20
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 19
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 18
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 17
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 16
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 15
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 14
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 13
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 12
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 11
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 10
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 9
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 8
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 7
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 6
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 5
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 4
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 3
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 2
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 1
-"fixedToFloat.v" line 212: $display : Leadpos Error
-"fixedToFloat.v" line 60: $display : leadpos value is 0
+"fixedToFloat.v" line 210: $display : Leadpos Error
+"fixedToFloat.v" line 210: $display : Leadpos Error
+"fixedToFloat.v" line 210: $display : Leadpos Error
+"fixedToFloat.v" line 210: $display : Leadpos Error
+"fixedToFloat.v" line 210: $display : Leadpos Error
+"fixedToFloat.v" line 210: $display : Leadpos Error
+"fixedToFloat.v" line 210: $display : Leadpos Error
+"fixedToFloat.v" line 210: $display : Leadpos Error
+"fixedToFloat.v" line 210: $display : Leadpos Error
+"fixedToFloat.v" line 210: $display : Leadpos Error
+"fixedToFloat.v" line 210: $display : Leadpos Error
+"fixedToFloat.v" line 210: $display : Leadpos Error
+"fixedToFloat.v" line 210: $display : Leadpos Error
+"fixedToFloat.v" line 210: $display : Leadpos Error
+"fixedToFloat.v" line 210: $display : Leadpos Error
+"fixedToFloat.v" line 210: $display : Leadpos Error
+"fixedToFloat.v" line 210: $display : Leadpos Error
+"fixedToFloat.v" line 210: $display : Leadpos Error
+"fixedToFloat.v" line 210: $display : Leadpos Error
+"fixedToFloat.v" line 210: $display : Leadpos Error
+"fixedToFloat.v" line 210: $display : Leadpos Error
+"fixedToFloat.v" line 210: $display : Leadpos Error
+"fixedToFloat.v" line 210: $display : Leadpos Error
+"fixedToFloat.v" line 210: $display : Leadpos Error
+"fixedToFloat.v" line 210: $display : Leadpos Error
+"fixedToFloat.v" line 210: $display : Leadpos Error
+"fixedToFloat.v" line 210: $display : Leadpos Error
+"fixedToFloat.v" line 210: $display : Leadpos Error
+"fixedToFloat.v" line 210: $display : Leadpos Error
+"fixedToFloat.v" line 210: $display : Leadpos Error
+"fixedToFloat.v" line 210: $display : Leadpos Error
 Module <fixedToFloat> is correct for synthesis.
  
 
@@ -207,6 +192,29 @@ Module <fixedToFloat> is correct for synthesis.
 Performing bidirectional port resolution...
 INFO:Xst:2679 - Register <i> in unit <fixedToFloat> has a constant value of 11111111111111111111111111111111 during circuit operation. The register is replaced by logic.
 
+Synthesizing Unit <floatToFix>.
+    Related source file is "floatToFix.v".
+WARNING:Xst:646 - Signal <sign> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <pos_val> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <implied_fraction> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <fraction> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <biased_exponent> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <answer> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:643 - "floatToFix.v" line 64: The result of a 32x24-bit multiplication is partially used. Only the 32 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 32-bit register for signal <result>.
+    Found 9-bit subtractor for signal <old_zeros_28$addsub0000> created at line 60.
+    Found 9-bit subtractor for signal <old_zeros_28$addsub0001> created at line 60.
+    Found 6-bit adder for signal <old_zeros_28$sub0000> created at line 60.
+    Found 32x24-bit multiplier for signal <result$mult0001> created at line 64.
+    Found 32-bit shifter logical left for signal <result$shift0001> created at line 64.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+	inferred   1 Combinational logic shifter(s).
+Unit <floatToFix> synthesized.
+
+
 Synthesizing Unit <fixedToFloat>.
     Related source file is "fixedToFloat.v".
 WARNING:Xst:646 - Signal <sign> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -215,11 +223,11 @@ WARNING:Xst:646 - Signal <leadpos> is assigned but never used. This unconnected 
 WARNING:Xst:646 - Signal <biased_exponent> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <answer> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found 32-bit register for signal <result>.
-    Found 7-bit subtractor for signal <biased_exponent$sub0000> created at line 221.
-    Found 7-bit subtractor for signal <biased_exponent$sub0001> created at line 224.
+    Found 7-bit subtractor for signal <biased_exponent$sub0000> created at line 219.
+    Found 7-bit subtractor for signal <biased_exponent$sub0001> created at line 222.
     Found 23-bit register for signal <fraction>.
-    Found 5-bit comparator less for signal <old_biased_exponent_118$cmp_lt0000> created at line 219.
-    Found 32-bit adder for signal <old_pos_val_2$addsub0000> created at line 49.
+    Found 5-bit comparator less for signal <old_biased_exponent_146$cmp_lt0000> created at line 217.
+    Found 32-bit adder for signal <old_pos_val_30$addsub0000> created at line 48.
     Found 32-bit register for signal <temp>.
     Summary:
 	inferred  87 D-type flip-flop(s).
@@ -231,7 +239,6 @@ Unit <fixedToFloat> synthesized.
 Synthesizing Unit <fixedFloatConversion>.
     Related source file is "fixedFloatConversion.v".
 WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:653 - Signal <fixresult> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
     Found 32-bit register for signal <result>.
     Summary:
 	inferred  32 D-type flip-flop(s).
@@ -243,15 +250,22 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 4
+# Multipliers                                          : 1
+ 32x24-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 8
  32-bit adder                                          : 1
+ 6-bit adder                                           : 1
  7-bit subtractor                                      : 2
  8-bit adder carry in                                  : 1
-# Registers                                            : 3
+ 9-bit adder                                           : 1
+ 9-bit subtractor                                      : 2
+# Registers                                            : 4
  23-bit register                                       : 1
- 32-bit register                                       : 2
+ 32-bit register                                       : 3
 # Comparators                                          : 1
  5-bit comparator less                                 : 1
+# Logic shifters                                       : 1
+ 32-bit shifter logical left                           : 1
 
 =========================================================================
 
@@ -260,32 +274,49 @@ Macro Statistics
 =========================================================================
 
 
+Synthesizing (advanced) Unit <floatToFix>.
+	Found pipelined multiplier on signal <result_mult0001>:
+		- 1 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+INFO:Xst:2385 - HDL ADVISOR - You can improve the performance of the multiplier Mmult_result_mult0001 by adding 2 register level(s).
+Unit <floatToFix> synthesized (advanced).
+
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 4
+# Multipliers                                          : 1
+ 32x24-bit registered multiplier                       : 1
+# Adders/Subtractors                                   : 8
  32-bit adder                                          : 1
+ 6-bit adder                                           : 1
  7-bit subtractor                                      : 2
  8-bit adder carry in                                  : 1
+ 9-bit adder                                           : 1
+ 9-bit subtractor                                      : 2
 # Registers                                            : 87
  Flip-Flops                                            : 87
 # Comparators                                          : 1
  5-bit comparator less                                 : 1
+# Logic shifters                                       : 1
+ 32-bit shifter logical left                           : 1
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:2677 - Node <Mmult_result_mult0001_submult_11> of sequential type is unconnected in block <floatToFix>.
 
 Optimizing unit <fixedFloatConversion> ...
+
+Optimizing unit <floatToFix> ...
 
 Optimizing unit <fixedToFloat> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block fixedFloatConversion, actual ratio is 45.
+Found area constraint ratio of 100 (+ 5) on block fixedFloatConversion, actual ratio is 55.
 
 Final Macro Processing ...
 
@@ -293,8 +324,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 87
- Flip-Flops                                            : 87
+# Registers                                            : 119
+ Flip-Flops                                            : 119
 
 =========================================================================
 
@@ -323,20 +354,21 @@ Design Statistics
 # IOs                              : 72
 
 Cell Usage :
-# BELS                             : 1130
+# BELS                             : 1396
 #      GND                         : 1
 #      INV                         : 33
-#      LUT1                        : 1
-#      LUT2                        : 17
-#      LUT3                        : 158
-#      LUT4                        : 688
-#      LUT4_L                      : 4
+#      LUT1                        : 4
+#      LUT2                        : 54
+#      LUT3                        : 190
+#      LUT4                        : 796
+#      LUT4_L                      : 1
 #      MULT_AND                    : 5
-#      MUXCY                       : 51
-#      MUXF5                       : 125
+#      MUXCY                       : 101
+#      MUXF5                       : 116
 #      VCC                         : 1
-#      XORCY                       : 46
-# FlipFlops/Latches                : 87
+#      XORCY                       : 94
+# FlipFlops/Latches                : 119
+#      FD                          : 32
 #      FDE                         : 23
 #      FDR                         : 64
 # Clock Buffers                    : 1
@@ -344,6 +376,8 @@ Cell Usage :
 # IO Buffers                       : 70
 #      IBUF                        : 38
 #      OBUF                        : 32
+# MULTs                            : 3
+#      MULT18X18SIO                : 3
 =========================================================================
 
 Device utilization summary:
@@ -351,11 +385,12 @@ Device utilization summary:
 
 Selected Device : 3s100etq144-5 
 
- Number of Slices:                      511  out of    960    53%  
- Number of Slice Flip Flops:             87  out of   1920     4%  
- Number of 4 input LUTs:                901  out of   1920    46%  
+ Number of Slices:                      610  out of    960    63%  
+ Number of Slice Flip Flops:            119  out of   1920     6%  
+ Number of 4 input LUTs:               1078  out of   1920    56%  
  Number of IOs:                          72
  Number of bonded IOBs:                  71  out of    108    65%  
+ Number of MULT18X18SIOs:                 3  out of      4    75%  
  Number of GCLKs:                         1  out of     24     4%  
 
 ---------------------------
@@ -379,7 +414,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 87    |
+clk                                | BUFGP                  | 119   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -391,7 +426,7 @@ Timing Summary:
 Speed Grade: -5
 
    Minimum period: 2.469ns (Maximum Frequency: 405.022MHz)
-   Minimum input arrival time before clock: 71.981ns
+   Minimum input arrival time before clock: 71.485ns
    Maximum output required time after clock: 4.040ns
    Maximum combinational path delay: No path found
 
@@ -402,127 +437,126 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 2.469ns (frequency: 405.022MHz)
-  Total number of paths / destination ports: 78 / 78
+  Total number of paths / destination ports: 110 / 78
 -------------------------------------------------------------------------
 Delay:               2.469ns (Levels of Logic = 2)
-  Source:            fixedToFloat_inst/fraction_22 (FF)
-  Destination:       fixedToFloat_inst/result_22 (FF)
+  Source:            fixedToFloat_inst/fraction_4 (FF)
+  Destination:       fixedToFloat_inst/result_4 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: fixedToFloat_inst/fraction_22 to fixedToFloat_inst/result_22
+  Data Path: fixedToFloat_inst/fraction_4 to fixedToFloat_inst/result_4
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              1   0.514   0.360  fixedToFloat_inst/fraction_22 (fixedToFloat_inst/fraction_22)
-     LUT4_L:I3->LO         1   0.612   0.103  fixedToFloat_inst/_old_fraction_119<22>260 (fixedToFloat_inst/_old_fraction_119<22>260)
-     LUT4:I3->O            2   0.612   0.000  fixedToFloat_inst/_old_fraction_119<22>404 (fixedToFloat_inst/_old_fraction_119<22>)
-     FDE:D                     0.268          fixedToFloat_inst/fraction_22
+     FDE:C->Q              1   0.514   0.360  fixedToFloat_inst/fraction_4 (fixedToFloat_inst/fraction_4)
+     LUT4_L:I3->LO         1   0.612   0.103  fixedToFloat_inst/_old_fraction_147<4>38 (fixedToFloat_inst/_old_fraction_147<4>38)
+     LUT4:I3->O            2   0.612   0.000  fixedToFloat_inst/_old_fraction_147<4>329 (fixedToFloat_inst/_old_fraction_147<4>)
+     FDE:D                     0.268          fixedToFloat_inst/fraction_4
     ----------------------------------------
     Total                      2.469ns (2.006ns logic, 0.463ns route)
                                        (81.2% logic, 18.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 15420778122336 / 142
+  Total number of paths / destination ports: 14530659962228 / 206
 -------------------------------------------------------------------------
-Offset:              71.981ns (Levels of Logic = 84)
+Offset:              71.485ns (Levels of Logic = 83)
   Source:            targetnumber<0> (PAD)
-  Destination:       fixedToFloat_inst/result_5 (FF)
+  Destination:       fixedToFloat_inst/result_12 (FF)
   Destination Clock: clk rising
 
-  Data Path: targetnumber<0> to fixedToFloat_inst/result_5
+  Data Path: targetnumber<0> to fixedToFloat_inst/result_12
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             5   1.106   0.690  targetnumber_0_IBUF (targetnumber_0_IBUF)
-     LUT1:I0->O            1   0.612   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<0>_rt (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<0>_rt)
-     MUXCY:S->O            1   0.404   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<0> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<0>)
-     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<1> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<1>)
-     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<2> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<2>)
-     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<3> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<3>)
-     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<4> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<4>)
-     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<5> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<5>)
-     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<6> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<6>)
-     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<7> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<7>)
-     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<8> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<8>)
-     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<9> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<9>)
-     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<10> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<10>)
-     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<11> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<11>)
-     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<12> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<12>)
-     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<13> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<13>)
-     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<14> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<14>)
-     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<15> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<15>)
-     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<16> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<16>)
-     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<17> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<17>)
-     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<18> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<18>)
-     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<19> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<19>)
-     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<20> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<20>)
-     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<21> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<21>)
-     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<22> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<22>)
-     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<23> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<23>)
-     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<24> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<24>)
-     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<25> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<25>)
-     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<26> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<26>)
-     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<27> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<27>)
-     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<28> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<28>)
-     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<29> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<29>)
-     XORCY:CI->O           5   0.699   0.568  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_xor<30> (fixedToFloat_inst/old_pos_val_2_addsub0000<30>)
-     LUT3:I2->O           36   0.612   1.226  fixedToFloat_inst/_old_pos_val_2<30>1 (fixedToFloat_inst/_old_pos_val_2<30>)
-     LUT3:I0->O           20   0.612   0.940  fixedToFloat_inst/_old_fraction_119<22>111311 (fixedToFloat_inst/N871)
-     LUT4:I3->O           46   0.612   1.229  fixedToFloat_inst/old_temp_19_and00001 (fixedToFloat_inst/old_temp_19_and0000)
-     LUT4:I0->O           13   0.612   0.988  fixedToFloat_inst/old_temp_25_and00001 (fixedToFloat_inst/N881)
-     LUT3:I0->O           50   0.612   1.081  fixedToFloat_inst/old_temp_25_and00002 (fixedToFloat_inst/old_temp_25_and0000)
-     LUT4:I3->O            1   0.612   0.360  fixedToFloat_inst/old_temp_33_and00001_SW1 (N885)
-     LUT4:I3->O           10   0.612   0.780  fixedToFloat_inst/old_temp_33_and00001 (fixedToFloat_inst/N891)
-     LUT3:I2->O           19   0.612   0.952  fixedToFloat_inst/_old_fraction_119<6>1212 (fixedToFloat_inst/N150)
-     LUT4:I2->O           36   0.612   1.077  fixedToFloat_inst/old_temp_37_and00001 (fixedToFloat_inst/old_temp_37_and0000)
-     LUT4:I3->O            6   0.612   0.599  fixedToFloat_inst/_old_leadpos_35<0>1 (fixedToFloat_inst/_old_leadpos_35<0>)
-     LUT4:I2->O           17   0.612   0.962  fixedToFloat_inst/_old_fraction_119<4>142 (fixedToFloat_inst/N173)
-     LUT4:I1->O           17   0.612   0.923  fixedToFloat_inst/_old_fraction_119<10>1211 (fixedToFloat_inst/N126)
-     LUT4:I2->O           39   0.612   1.144  fixedToFloat_inst/old_temp_45_and00001 (fixedToFloat_inst/old_temp_45_and0000)
-     LUT4:I1->O            7   0.612   0.754  fixedToFloat_inst/old_temp_53_and00001 (fixedToFloat_inst/N135)
-     LUT3:I0->O           11   0.612   0.945  fixedToFloat_inst/old_temp_53_and00002 (fixedToFloat_inst/old_temp_53_and0000)
-     LUT3:I0->O            2   0.612   0.532  fixedToFloat_inst/old_temp_61_and0000121 (fixedToFloat_inst/N1121)
-     LUT3:I0->O           12   0.612   0.969  fixedToFloat_inst/old_temp_61_and000011 (fixedToFloat_inst/N136)
-     LUT3:I0->O           21   0.612   0.989  fixedToFloat_inst/old_temp_61_and00002 (fixedToFloat_inst/old_temp_61_and0000)
-     LUT3:I2->O            6   0.612   0.599  fixedToFloat_inst/old_temp_93_and000011 (fixedToFloat_inst/N130)
-     LUT4:I2->O           25   0.612   1.223  fixedToFloat_inst/old_temp_69_and00001 (fixedToFloat_inst/old_temp_69_and0000)
-     LUT4:I0->O            9   0.612   0.849  fixedToFloat_inst/old_temp_77_and00001 (fixedToFloat_inst/N911)
-     LUT4:I0->O           28   0.612   1.141  fixedToFloat_inst/old_temp_73_and00001 (fixedToFloat_inst/old_temp_73_and0000)
-     LUT4:I1->O            2   0.612   0.410  fixedToFloat_inst/old_temp_93_and00002 (fixedToFloat_inst/N148)
-     LUT4:I2->O            1   0.612   0.360  fixedToFloat_inst/old_temp_85_and00001_SW0 (N28)
-     LUT4:I3->O            5   0.612   0.690  fixedToFloat_inst/old_temp_85_and00001 (fixedToFloat_inst/N1011)
-     LUT4:I0->O            8   0.612   0.712  fixedToFloat_inst/old_temp_81_and00001 (fixedToFloat_inst/old_temp_81_and0000)
-     LUT4:I1->O            3   0.612   0.481  fixedToFloat_inst/_old_leadpos_79<1> (fixedToFloat_inst/_old_leadpos_79<1>)
-     LUT3:I2->O            6   0.612   0.572  fixedToFloat_inst/old_temp_93_and000031 (fixedToFloat_inst/N931)
-     LUT4:I3->O           13   0.612   0.988  fixedToFloat_inst/old_temp_93_and00004 (fixedToFloat_inst/old_temp_93_and0000)
-     LUT4:I0->O            5   0.612   0.607  fixedToFloat_inst/_old_leadpos_91<0>23 (fixedToFloat_inst/_old_leadpos_91<0>)
-     LUT4:I1->O            1   0.612   0.360  fixedToFloat_inst/temp_and00001_SW1 (N967)
-     LUT4:I3->O            6   0.612   0.721  fixedToFloat_inst/temp_and00001 (fixedToFloat_inst/N133)
-     LUT3:I0->O           19   0.612   1.074  fixedToFloat_inst/old_temp_101_and00001 (fixedToFloat_inst/old_temp_101_and0000)
-     LUT4:I0->O            4   0.612   0.529  fixedToFloat_inst/_old_leadpos_103<2>1 (fixedToFloat_inst/_old_leadpos_103<2>)
-     LUT3:I2->O            4   0.612   0.529  fixedToFloat_inst/old_leadpos_116_and000011 (fixedToFloat_inst/N921)
-     LUT3:I2->O            3   0.612   0.454  fixedToFloat_inst/old_temp_113_and00001 (fixedToFloat_inst/old_temp_113_and0000)
-     LUT4:I3->O            1   0.612   0.360  fixedToFloat_inst/_old_leadpos_111<1>_SW1 (N957)
-     LUT4:I3->O            4   0.612   0.651  fixedToFloat_inst/_old_leadpos_111<1> (fixedToFloat_inst/_old_leadpos_111<1>)
-     LUT4:I0->O            3   0.612   0.454  fixedToFloat_inst/old_leadpos_116_and0000_SW0 (N38)
-     LUT4:I3->O            3   0.612   0.481  fixedToFloat_inst/old_leadpos_116_and0000 (fixedToFloat_inst/old_leadpos_116_and0000)
-     LUT4:I2->O           13   0.612   0.866  fixedToFloat_inst/_old_fraction_119<0>211 (fixedToFloat_inst/N961)
-     LUT3:I2->O            6   0.612   0.599  fixedToFloat_inst/_old_fraction_119<0>21 (fixedToFloat_inst/N125)
-     LUT4:I2->O            6   0.612   0.638  fixedToFloat_inst/_old_fraction_119<4>211 (fixedToFloat_inst/N981)
-     LUT3:I1->O            5   0.612   0.541  fixedToFloat_inst/_old_fraction_119<4>41 (fixedToFloat_inst/N1141)
-     LUT4:I3->O            2   0.612   0.532  fixedToFloat_inst/_old_fraction_119<5>394_SW0 (N106)
-     LUT4:I0->O            4   0.612   0.651  fixedToFloat_inst/_old_fraction_119<5>363_SW0 (N380)
-     LUT4:I0->O            1   0.612   0.000  fixedToFloat_inst/_old_fraction_119<5>285_SW1_F (N813)
-     MUXF5:I0->O           4   0.278   0.651  fixedToFloat_inst/_old_fraction_119<5>285_SW1 (N574)
-     LUT4:I0->O            1   0.612   0.000  fixedToFloat_inst/_old_fraction_119<5>27_SW1_F (N857)
-     MUXF5:I0->O           1   0.278   0.426  fixedToFloat_inst/_old_fraction_119<5>27_SW1 (N630)
-     LUT3:I1->O            2   0.612   0.000  fixedToFloat_inst/_old_fraction_119<5>442 (fixedToFloat_inst/_old_fraction_119<5>)
-     FDE:D                     0.268          fixedToFloat_inst/fraction_5
+     IBUF:I->O            13   1.106   0.988  targetnumber_0_IBUF (targetnumber_0_IBUF)
+     LUT1:I0->O            1   0.612   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<0>_rt (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<0>_rt)
+     MUXCY:S->O            1   0.404   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<0> (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<1> (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<2> (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<3> (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<4> (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<5> (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<6> (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<7> (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<8> (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<9> (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<10> (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<11> (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<12> (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<13> (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<14> (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<15> (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<16> (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<17> (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<18> (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<19> (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<20> (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<21> (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<22> (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<22>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<23> (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<23>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<24> (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<24>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<25> (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<25>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<26> (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<26>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<27> (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<27>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<28> (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<28>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<29> (fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_cy<29>)
+     XORCY:CI->O           2   0.699   0.410  fixedToFloat_inst/Madd_old_pos_val_30_addsub0000_xor<30> (fixedToFloat_inst/old_pos_val_30_addsub0000<30>)
+     LUT3:I2->O           40   0.612   1.227  fixedToFloat_inst/_old_pos_val_30<30>1 (fixedToFloat_inst/_old_pos_val_30<30>)
+     LUT4:I0->O            7   0.612   0.754  fixedToFloat_inst/_old_fraction_147<19>11111 (fixedToFloat_inst/N127)
+     LUT4:I0->O           43   0.612   1.228  fixedToFloat_inst/old_temp_47_and00001 (fixedToFloat_inst/old_temp_47_and0000)
+     LUT4:I0->O            8   0.612   0.673  fixedToFloat_inst/old_temp_53_and00001 (fixedToFloat_inst/N881)
+     LUT3:I2->O           47   0.612   1.080  fixedToFloat_inst/old_temp_53_and00002 (fixedToFloat_inst/old_temp_53_and0000)
+     LUT4:I3->O            1   0.612   0.360  fixedToFloat_inst/old_temp_61_and00001_SW1 (N869)
+     LUT4:I3->O           15   0.612   0.894  fixedToFloat_inst/old_temp_61_and00001 (fixedToFloat_inst/N891)
+     LUT3:I2->O           11   0.612   0.945  fixedToFloat_inst/_old_fraction_147<6>1212 (fixedToFloat_inst/N150)
+     LUT4:I0->O           37   0.612   1.077  fixedToFloat_inst/old_temp_65_and00001 (fixedToFloat_inst/old_temp_65_and0000)
+     LUT4:I3->O            5   0.612   0.690  fixedToFloat_inst/_old_leadpos_63<0>1 (fixedToFloat_inst/_old_leadpos_63<0>)
+     LUT4:I0->O           32   0.612   1.142  fixedToFloat_inst/old_temp_69_and0000 (fixedToFloat_inst/old_temp_69_and0000)
+     LUT3:I1->O           23   0.612   1.174  fixedToFloat_inst/_old_fraction_147<10>1211 (fixedToFloat_inst/N126)
+     LUT4:I0->O           43   0.612   1.228  fixedToFloat_inst/old_temp_73_and00001 (fixedToFloat_inst/old_temp_73_and0000)
+     LUT4:I0->O           13   0.612   0.866  fixedToFloat_inst/old_temp_81_and00001 (fixedToFloat_inst/N135)
+     LUT3:I2->O           13   0.612   0.988  fixedToFloat_inst/old_temp_81_and00002 (fixedToFloat_inst/old_temp_81_and0000)
+     LUT3:I0->O            2   0.612   0.410  fixedToFloat_inst/old_temp_121_and0000111 (fixedToFloat_inst/N1112)
+     LUT3:I2->O            9   0.612   0.727  fixedToFloat_inst/old_temp_89_and000011 (fixedToFloat_inst/N136)
+     LUT3:I2->O           19   0.612   0.991  fixedToFloat_inst/old_temp_89_and00002 (fixedToFloat_inst/old_temp_89_and0000)
+     LUT3:I1->O            6   0.612   0.638  fixedToFloat_inst/old_temp_121_and000011 (fixedToFloat_inst/N130)
+     LUT3:I1->O           24   0.612   1.216  fixedToFloat_inst/old_temp_93_and00001 (fixedToFloat_inst/old_temp_93_and0000)
+     LUT3:I0->O            5   0.612   0.541  fixedToFloat_inst/_old_leadpos_91<1>1 (fixedToFloat_inst/_old_leadpos_91<1>)
+     LUT4:I3->O            2   0.612   0.383  fixedToFloat_inst/old_temp_105_and00001_SW0 (N32)
+     LUT4:I3->O            9   0.612   0.849  fixedToFloat_inst/old_temp_105_and00001 (fixedToFloat_inst/N911)
+     LUT4:I0->O           24   0.612   1.133  fixedToFloat_inst/_old_fraction_147<13>202_SW0_SW0_SW0 (fixedToFloat_inst/old_temp_101_and0000)
+     LUT4:I1->O            1   0.612   0.360  fixedToFloat_inst/old_temp_121_and00002_SW0 (N28)
+     LUT4:I3->O            2   0.612   0.410  fixedToFloat_inst/old_temp_121_and00002 (fixedToFloat_inst/N148)
+     LUT4:I2->O            1   0.612   0.360  fixedToFloat_inst/old_temp_113_and00001_SW0 (N30)
+     LUT4:I3->O            5   0.612   0.690  fixedToFloat_inst/old_temp_113_and00001 (fixedToFloat_inst/N1011)
+     LUT4:I0->O           10   0.612   0.902  fixedToFloat_inst/old_temp_109_and00001 (fixedToFloat_inst/old_temp_109_and0000)
+     LUT4:I0->O            4   0.612   0.651  fixedToFloat_inst/_old_leadpos_107<3> (fixedToFloat_inst/_old_leadpos_107<3>)
+     LUT4:I0->O           12   0.612   0.969  fixedToFloat_inst/old_temp_121_and00004 (fixedToFloat_inst/old_temp_121_and0000)
+     LUT4:I0->O            9   0.612   0.727  fixedToFloat_inst/temp_and0000111 (fixedToFloat_inst/N1151)
+     LUT4:I2->O            1   0.612   0.360  fixedToFloat_inst/temp_and00001_SW0 (N20)
+     LUT4:I3->O            6   0.612   0.599  fixedToFloat_inst/temp_and00001 (fixedToFloat_inst/N133)
+     LUT3:I2->O           17   0.612   1.045  fixedToFloat_inst/old_temp_129_and00001 (fixedToFloat_inst/old_temp_129_and0000)
+     LUT4:I0->O            4   0.612   0.529  fixedToFloat_inst/_old_leadpos_131<2>1 (fixedToFloat_inst/_old_leadpos_131<2>)
+     LUT3:I2->O            4   0.612   0.529  fixedToFloat_inst/old_leadpos_144_and000011 (fixedToFloat_inst/N921)
+     LUT3:I2->O            3   0.612   0.603  fixedToFloat_inst/old_temp_141_and00001 (fixedToFloat_inst/old_temp_141_and0000)
+     LUT4:I0->O            5   0.612   0.690  fixedToFloat_inst/_old_leadpos_139<1> (fixedToFloat_inst/_old_leadpos_139<1>)
+     LUT4:I0->O            4   0.612   0.502  fixedToFloat_inst/old_leadpos_144_and0000 (fixedToFloat_inst/old_leadpos_144_and0000)
+     LUT4:I3->O           15   0.612   0.894  fixedToFloat_inst/_old_fraction_147<0>211 (fixedToFloat_inst/N961)
+     LUT3:I2->O            8   0.612   0.795  fixedToFloat_inst/_old_fraction_147<12>31 (fixedToFloat_inst/N139)
+     LUT3:I0->O            5   0.612   0.690  fixedToFloat_inst/_old_fraction_147<12>41 (fixedToFloat_inst/N153)
+     LUT4:I0->O            1   0.612   0.000  fixedToFloat_inst/_old_fraction_147<12>294_SW0_G (N684)
+     MUXF5:I1->O           2   0.278   0.532  fixedToFloat_inst/_old_fraction_147<12>294_SW0 (N245)
+     LUT4:I0->O            2   0.612   0.532  fixedToFloat_inst/_old_fraction_147<12>248_SW0 (N442)
+     LUT4:I0->O            3   0.612   0.603  fixedToFloat_inst/_old_fraction_147<12>166_SW1 (N548)
+     LUT4:I0->O            1   0.612   0.000  fixedToFloat_inst/_old_fraction_147<12>120_SW1_F (N799)
+     MUXF5:I0->O           1   0.278   0.387  fixedToFloat_inst/_old_fraction_147<12>120_SW1 (N602)
+     LUT4:I2->O            2   0.612   0.000  fixedToFloat_inst/_old_fraction_147<12>328 (fixedToFloat_inst/_old_fraction_147<12>)
+     FDE:D                     0.268          fixedToFloat_inst/fraction_12
     ----------------------------------------
-    Total                     71.981ns (35.126ns logic, 36.854ns route)
-                                       (48.8% logic, 51.2% route)
+    Total                     71.485ns (34.514ns logic, 36.971ns route)
+                                       (48.3% logic, 51.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -537,7 +571,7 @@ Offset:              4.040ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              1   0.514   0.357  result_31 (result_31)
+     FD:C->Q               1   0.514   0.357  result_31 (result_31)
      OBUF:I->O                 3.169          result_31_OBUF (result<31>)
     ----------------------------------------
     Total                      4.040ns (3.683ns logic, 0.357ns route)
@@ -546,15 +580,15 @@ Offset:              4.040ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 20.00 secs
-Total CPU time to Xst completion: 19.86 secs
+Total REAL time to Xst completion: 26.00 secs
+Total CPU time to Xst completion: 26.79 secs
  
 --> 
 
 
-Total memory usage is 636172 kilobytes
+Total memory usage is 641824 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    9 (   0 filtered)
-Number of infos    :    2 (   0 filtered)
+Number of warnings :   21 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
 

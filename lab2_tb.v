@@ -30,7 +30,7 @@ module lab2_tb;
 	reg [31:0] targetnumber;
 	reg [4:0] fixpointpos;
 	reg opcode;
-
+	reg [31:0] R;
 	// Outputs
 	wire [31:0] result;
 
@@ -59,21 +59,78 @@ module lab2_tb;
 		targetnumber = 0;
 		fixpointpos = 0;
 		opcode = 0;
-	
+		R = 32'h00000000;
+		#200;
+		if(R != result) $display("Result is wrong");
 		// Wait 100 ns for global reset to finish
-		#100;
 		
 		targetnumber = 32'hFFFFFFFF;
 		fixpointpos = 1;
 		opcode = 0;
-		#100;
+		R = 32'hBF000000;
+		#200;
+		if(R != result) $display("Result is wrong");
 		
 		// Add stimulus here
-		targetnumber = 32'h00000003;
+		opcode = 0;
+      fixpointpos = 0; //Should detect is zero
+      targetnumber = 32'h00000000;
+      R = 32'h00000000; //Default is +0
+      #200;
+      if(R != result) $display("Result is wrong");
+        
+      opcode = 0;
+      fixpointpos = 32;//Should not matter how many bits are before decimal
+      targetnumber = 32'h00000000;// Should still detect this as zero
+      R = 32'h00000000;
+      #200;
+      if(R != result) $display("Result is wrong");
+
+		targetnumber = 32'h00000003; //Checking if fixpointpos works properly
 		fixpointpos = 1;
 		opcode = 0;
-		#100;
+		R = 32'h3FC00000;
+		#200;
+		if(R != result) $display("Result is wrong");
+//--------
+// Floating Point to Fixed Point
+//--------
+        opcode = 1;
+		  #200;
+        fixpointpos = 0;
+        targetnumber = 32'h00000000;
+        R = 32'h00000000;
+        #200;	
+        if(R != result) $display("Result is wrong");
 
+        opcode = 1;
+        fixpointpos = 16; //Checking if the number of bits before the decimal affects zero result
+        targetnumber = 32'h00000000;
+        R = 32'h00000000;
+        #200;
+        if(R != result) $display("Result is wrong");
+        
+        opcode = 1;
+        fixpointpos = 0; 
+        targetnumber = 32'h80000000; //Negative Zero should stil just give us zero
+        R = 32'h00000000;
+		  #200;
+        if(R != result) $display("Result is wrong");
+		  
+		  opcode = 1;
+        fixpointpos = 1; 
+        targetnumber = 32'h3FC00000; //Check to make sure math actually works
+        R = 32'h00000003;
+		  #200;
+        if(R != result) $display("Result is wrong");
+		  
+		  opcode = 1;
+        fixpointpos = 1; 
+        targetnumber = 32'hBF000000; //Checking negative values
+        R = 32'hFFFFFFFF;
+		  #200;
+        if(R != result) $display("Result is wrong");
+		  $display("Test Complete");
 	end
       
 endmodule
