@@ -25,6 +25,7 @@ module fixedToFloat(
     output reg[31:0] result
     );
 reg sign;
+reg [31:0] answer;
 reg [31:0] pos_val;
 reg [7:0] biased_exponent;
 reg [22:0] fraction;
@@ -74,137 +75,138 @@ begin
 						end
 						5'd3: begin
 							temp = pos_val[2:0];
-							temp = temp * ;
-							fraction = temp;
-						end
-						5'd4: begin
-							temp = pos_val[0];
-							temp = temp * 4194304;
-							fraction = temp;
-						end
-						5'd5: begin
-							temp = pos_val[1:0];
-							temp = temp * 2097152;
-							fraction = temp;
-						end
-						5'd6: begin
-							temp = pos_val[2:0];
-							temp = temp * ;
-							fraction = temp;
-						end
-						5'd7: begin
-							temp = pos_val[0];
-							temp = temp * 4194304;
-							fraction = temp;
-						end
-						5'd8: begin
-							temp = pos_val[1:0];
-							temp = temp * 2097152;
-							fraction = temp;
-						end
-						5'd9: begin
-							temp = pos_val[2:0];
-							temp = temp * ;
-							fraction = temp;
-						end
-						5'd10: begin
-							temp = pos_val[0];
-							temp = temp * 4194304;
-							fraction = temp;
-						end
-						5'd11: begin
-							temp = pos_val[1:0];
-							temp = temp * 2097152;
-							fraction = temp ;
-						end
-						5'd12: begin
-							temp = pos_val[2:0];
 							temp = temp * 1048576;
 							fraction = temp;
 						end
-						5'd13: begin
-							temp = pos_val[0];
+						5'd4: begin
+							temp = pos_val[3:0];
 							temp = temp * 524288;
 							fraction = temp;
 						end
-						5'd14: begin
-							temp = pos_val[1:0];
+						5'd5: begin
+							temp = pos_val[4:0];
 							temp = temp * 262144;
 							fraction = temp;
 						end
-						5'd15: begin
-							temp = pos_val[2:0];
+						5'd6: begin
+							temp = pos_val[5:0];
 							temp = temp * 131072;
 							fraction = temp;
 						end
+						5'd7: begin
+							temp = pos_val[6:0];
+							temp = temp * 65536;
+							fraction = temp;
+						end
+						5'd8: begin
+							temp = pos_val[7:0];
+							temp = temp * 32768;
+							fraction = temp;
+						end
+						5'd9: begin
+							temp = pos_val[8:0];
+							temp = temp * 16384;
+							fraction = temp;
+						end
+						5'd10: begin
+							temp = pos_val[9:0];
+							temp = temp * 8192;
+							fraction = temp;
+						end
+						5'd11: begin
+							temp = pos_val[10:0];
+							temp = temp * 4096;
+							fraction = temp ;
+						end
+						5'd12: begin
+							temp = pos_val[11:0];
+							temp = temp * 2048;
+							fraction = temp;
+						end
+						5'd13: begin
+							temp = pos_val[12:0];
+							temp = temp * 1024;
+							fraction = temp;
+						end
+						5'd14: begin
+							temp = pos_val[13:0];
+							temp = temp * 512;
+							fraction = temp;
+						end
+						5'd15: begin
+							temp = pos_val[14:0];
+							temp = temp * 256;
+							fraction = temp;
+						end
 						5'd16: begin
-							temp = pos_val[0];
-							temp = temp * 64;
+							temp = pos_val[15:0];
+							temp = temp * 128;
 							fraction = temp;
 						end
 						5'd17: begin
 							temp = pos_val[16:0];
-							temp = temp * 32;
+							temp = temp * 64;
 							fraction = temp;
 						end
 						5'd18: begin
 							temp = pos_val[17:0];
-							temp = temp * 16;
+							temp = temp * 32;
 							fraction = temp;
 						end
 						5'd19: begin
 							temp = pos_val[18:0];
-							temp = temp * 8;
+							temp = temp * 16;
 							fraction = temp;
 						end
 						5'd20: begin
 							temp = pos_val[19:0];
-							temp = temp * 4;
+							temp = temp * 8;
 							fraction = temp;
 						end
 						5'd21: begin
 							temp = pos_val[20:0];
-							temp = temp * 2;
+							temp = temp * 4;
 							fraction = temp;
 						end
 						5'd22: begin
 							temp = pos_val[21:0];
+							temp = temp * 2;
 							fraction = temp;
 						end
 						5'd23: begin
-							temp = pos_val[22:1];
+							temp = pos_val[22:0];
 							fraction = temp;
 						end
 						5'd24: begin
-							temp = pos_val[23:2];
+							temp = pos_val[23:1];
 							fraction = temp;
 						end
 						5'd25: begin
-							temp = pos_val[24:3];
+							temp = pos_val[24:2];
 							fraction = temp;
 						end
 						5'd26: begin
-							temp = pos_val[25:4];
+							temp = pos_val[25:3];
 							fraction = temp;
 						end
 						5'd27: begin
-							temp = pos_val[26:5];
+							temp = pos_val[26:4];
 							fraction = temp;
 						end
 						5'd28: begin
-							temp = pos_val[27:6];
+							temp = pos_val[27:5];
 							fraction = temp;
 						end
 						5'd29: begin
-							temp = pos_val[28:7];
+							temp = pos_val[28:6];
 							fraction = temp;
 						end
 						5'd30: begin
-							temp = pos_val[29:8];
+							temp = pos_val[29:7];
 							fraction = temp;
 						end
 						5'd31: begin
-							temp = pos_val[30:9];
+							temp = pos_val[30:8];
 							fraction = temp;
 						end
 						default: $display("Leadpos Error");
@@ -221,8 +223,8 @@ begin
 		else begin
 			biased_exponent = 127 + (leadpos - fixpointpos);
 		end
-		$display("biased_exponent is %d",biased_exponent);
-		$display("fraction is %b",fraction);
-	end
+		answer = {sign,biased_exponent,fraction};
+		result = answer;
+	end 
 end
 endmodule

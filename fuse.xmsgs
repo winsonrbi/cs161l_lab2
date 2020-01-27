@@ -5,5 +5,17 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"fixedToFloat.v" Line 134: Syntax error near &quot;<arg fmt="%s" index="1">fraction</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"fixedToFloat.v" Line 173: Syntax error near &quot;<arg fmt="%s" index="1">*</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="598" delta="unknown" >"fixedToFloat.v" Line 21: Module &lt;<arg fmt="%s" index="1">fixedToFloat</arg>&gt; ignored due to previous errors.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="598" delta="unknown" >"/home/csmajs/wbi002/cs161l_lab2/fixedFloatConversion.v" Line 22: Module &lt;<arg fmt="%s" index="1">fixedFloatConversion</arg>&gt; ignored due to previous errors.
+</msg>
+
 </messages>
 

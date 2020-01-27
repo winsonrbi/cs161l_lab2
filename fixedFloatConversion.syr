@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Reading design: fixedFloatConversion.prj
@@ -132,73 +132,71 @@ WARNING:Xst:2323 - "fixedFloatConversion.v" line 41: Parameter 1 is not constant
 Module <fixedFloatConversion> is correct for synthesis.
  
 Analyzing module <fixedToFloat> in library <work>.
-WARNING:Xst:2323 - "fixedToFloat.v" line 38: Parameter 2 is not constant in call of system task $display.
-"fixedToFloat.v" line 38: $display : Entered fixed point %b
-"fixedToFloat.v" line 59: $display : leadpos value is 31
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 30
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 29
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 28
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 27
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 26
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 25
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 24
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 23
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 22
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 21
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 20
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 19
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 18
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 17
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 16
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 15
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 14
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 13
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 12
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 11
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 10
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 9
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 8
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 7
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 6
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 5
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 4
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 3
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 2
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 1
-"fixedToFloat.v" line 70: $display : Leadpos Error
-"fixedToFloat.v" line 59: $display : leadpos value is 0
-WARNING:Xst:2323 - "fixedToFloat.v" line 84: Parameter 2 is not constant in call of system task $display.
-"fixedToFloat.v" line 84: $display : biased_exponent is %d
+WARNING:Xst:2323 - "fixedToFloat.v" line 39: Parameter 2 is not constant in call of system task $display.
+"fixedToFloat.v" line 39: $display : Entered fixed point %b
+"fixedToFloat.v" line 60: $display : leadpos value is 31
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 30
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 29
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 28
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 27
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 26
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 25
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 24
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 23
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 22
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 21
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 20
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 19
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 18
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 17
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 16
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 15
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 14
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 13
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 12
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 11
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 10
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 9
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 8
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 7
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 6
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 5
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 4
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 3
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 2
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 1
+"fixedToFloat.v" line 212: $display : Leadpos Error
+"fixedToFloat.v" line 60: $display : leadpos value is 0
 Module <fixedToFloat> is correct for synthesis.
  
 
@@ -207,7 +205,6 @@ Module <fixedToFloat> is correct for synthesis.
 =========================================================================
 
 Performing bidirectional port resolution...
-INFO:Xst:2679 - Register <result> in unit <fixedToFloat> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <i> in unit <fixedToFloat> has a constant value of 11111111111111111111111111111111 during circuit operation. The register is replaced by logic.
 
 Synthesizing Unit <fixedToFloat>.
@@ -215,8 +212,19 @@ Synthesizing Unit <fixedToFloat>.
 WARNING:Xst:646 - Signal <sign> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <pos_val> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <leadpos> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <fraction> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <biased_exponent> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <answer> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit register for signal <result>.
+    Found 7-bit subtractor for signal <biased_exponent$sub0000> created at line 221.
+    Found 7-bit subtractor for signal <biased_exponent$sub0001> created at line 224.
+    Found 23-bit register for signal <fraction>.
+    Found 5-bit comparator less for signal <old_biased_exponent_118$cmp_lt0000> created at line 219.
+    Found 32-bit adder for signal <old_pos_val_2$addsub0000> created at line 49.
+    Found 32-bit register for signal <temp>.
+    Summary:
+	inferred  87 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
 Unit <fixedToFloat> synthesized.
 
 
@@ -229,13 +237,21 @@ WARNING:Xst:653 - Signal <fixresult> is used but never assigned. This sourceless
 	inferred  32 D-type flip-flop(s).
 Unit <fixedFloatConversion> synthesized.
 
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Registers                                            : 1
- 32-bit register                                       : 1
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 1
+ 7-bit subtractor                                      : 2
+ 8-bit adder carry in                                  : 1
+# Registers                                            : 3
+ 23-bit register                                       : 1
+ 32-bit register                                       : 2
+# Comparators                                          : 1
+ 5-bit comparator less                                 : 1
 
 =========================================================================
 
@@ -243,68 +259,43 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:1290 - Hierarchical block <fixedToFloat_inst> is unconnected in block <fixedFloatConversion>.
-   It will be removed from the design.
-WARNING:Xst:1710 - FF/Latch <result_31> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_30> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_29> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_28> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_27> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_26> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_25> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_24> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_23> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_22> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_21> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_20> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_19> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_18> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_17> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_16> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_15> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_14> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_13> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_12> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_11> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_10> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_9> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_8> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_7> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_6> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_5> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_4> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_3> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_2> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_1> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <result_0> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Registers                                            : 32
- Flip-Flops                                            : 32
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 1
+ 7-bit subtractor                                      : 2
+ 8-bit adder carry in                                  : 1
+# Registers                                            : 87
+ Flip-Flops                                            : 87
+# Comparators                                          : 1
+ 5-bit comparator less                                 : 1
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-INFO:Xst:2261 - The FF/Latch <result_0> in Unit <fixedFloatConversion> is equivalent to the following 31 FFs/Latches, which will be removed : <result_1> <result_2> <result_3> <result_4> <result_5> <result_6> <result_7> <result_8> <result_9> <result_10> <result_11> <result_12> <result_13> <result_14> <result_15> <result_16> <result_17> <result_18> <result_19> <result_20> <result_21> <result_22> <result_23> <result_24> <result_25> <result_26> <result_27> <result_28> <result_29> <result_30> <result_31> 
-WARNING:Xst:1710 - FF/Latch <result_0> (without init value) has a constant value of 0 in block <fixedFloatConversion>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <fixedFloatConversion> ...
 
+Optimizing unit <fixedToFloat> ...
+
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block fixedFloatConversion, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block fixedFloatConversion, actual ratio is 45.
 
 Final Macro Processing ...
 
 =========================================================================
 Final Register Report
 
-Found no macro
+Macro Statistics
+# Registers                                            : 87
+ Flip-Flops                                            : 87
+
 =========================================================================
 
 =========================================================================
@@ -332,9 +323,26 @@ Design Statistics
 # IOs                              : 72
 
 Cell Usage :
-# BELS                             : 1
+# BELS                             : 1130
 #      GND                         : 1
-# IO Buffers                       : 32
+#      INV                         : 33
+#      LUT1                        : 1
+#      LUT2                        : 17
+#      LUT3                        : 158
+#      LUT4                        : 688
+#      LUT4_L                      : 4
+#      MULT_AND                    : 5
+#      MUXCY                       : 51
+#      MUXF5                       : 125
+#      VCC                         : 1
+#      XORCY                       : 46
+# FlipFlops/Latches                : 87
+#      FDE                         : 23
+#      FDR                         : 64
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 70
+#      IBUF                        : 38
 #      OBUF                        : 32
 =========================================================================
 
@@ -343,9 +351,12 @@ Device utilization summary:
 
 Selected Device : 3s100etq144-5 
 
- Number of Slices:                        0  out of    960     0%  
+ Number of Slices:                      511  out of    960    53%  
+ Number of Slice Flip Flops:             87  out of   1920     4%  
+ Number of 4 input LUTs:                901  out of   1920    46%  
  Number of IOs:                          72
- Number of bonded IOBs:                  32  out of    108    29%  
+ Number of bonded IOBs:                  71  out of    108    65%  
+ Number of GCLKs:                         1  out of     24     4%  
 
 ---------------------------
 Partition Resource Summary:
@@ -365,7 +376,11 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-No clock signals found in this design
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 87    |
+-----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -375,9 +390,9 @@ Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: No path found
-   Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: No path found
+   Minimum period: 2.469ns (Maximum Frequency: 405.022MHz)
+   Minimum input arrival time before clock: 71.981ns
+   Maximum output required time after clock: 4.040ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -385,17 +400,161 @@ Timing Detail:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.469ns (frequency: 405.022MHz)
+  Total number of paths / destination ports: 78 / 78
+-------------------------------------------------------------------------
+Delay:               2.469ns (Levels of Logic = 2)
+  Source:            fixedToFloat_inst/fraction_22 (FF)
+  Destination:       fixedToFloat_inst/result_22 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: fixedToFloat_inst/fraction_22 to fixedToFloat_inst/result_22
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.514   0.360  fixedToFloat_inst/fraction_22 (fixedToFloat_inst/fraction_22)
+     LUT4_L:I3->LO         1   0.612   0.103  fixedToFloat_inst/_old_fraction_119<22>260 (fixedToFloat_inst/_old_fraction_119<22>260)
+     LUT4:I3->O            2   0.612   0.000  fixedToFloat_inst/_old_fraction_119<22>404 (fixedToFloat_inst/_old_fraction_119<22>)
+     FDE:D                     0.268          fixedToFloat_inst/fraction_22
+    ----------------------------------------
+    Total                      2.469ns (2.006ns logic, 0.463ns route)
+                                       (81.2% logic, 18.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 15420778122336 / 142
+-------------------------------------------------------------------------
+Offset:              71.981ns (Levels of Logic = 84)
+  Source:            targetnumber<0> (PAD)
+  Destination:       fixedToFloat_inst/result_5 (FF)
+  Destination Clock: clk rising
+
+  Data Path: targetnumber<0> to fixedToFloat_inst/result_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.106   0.690  targetnumber_0_IBUF (targetnumber_0_IBUF)
+     LUT1:I0->O            1   0.612   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<0>_rt (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<0>_rt)
+     MUXCY:S->O            1   0.404   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<0> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<1> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<2> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<3> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<4> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<5> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<6> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<7> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<8> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<9> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<10> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<11> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<12> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<13> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<14> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<15> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<16> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<17> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<18> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<19> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<20> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<21> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<21>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<22> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<22>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<23> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<23>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<24> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<24>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<25> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<25>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<26> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<26>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<27> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<27>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<28> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<28>)
+     MUXCY:CI->O           1   0.051   0.000  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<29> (fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_cy<29>)
+     XORCY:CI->O           5   0.699   0.568  fixedToFloat_inst/Madd_old_pos_val_2_addsub0000_xor<30> (fixedToFloat_inst/old_pos_val_2_addsub0000<30>)
+     LUT3:I2->O           36   0.612   1.226  fixedToFloat_inst/_old_pos_val_2<30>1 (fixedToFloat_inst/_old_pos_val_2<30>)
+     LUT3:I0->O           20   0.612   0.940  fixedToFloat_inst/_old_fraction_119<22>111311 (fixedToFloat_inst/N871)
+     LUT4:I3->O           46   0.612   1.229  fixedToFloat_inst/old_temp_19_and00001 (fixedToFloat_inst/old_temp_19_and0000)
+     LUT4:I0->O           13   0.612   0.988  fixedToFloat_inst/old_temp_25_and00001 (fixedToFloat_inst/N881)
+     LUT3:I0->O           50   0.612   1.081  fixedToFloat_inst/old_temp_25_and00002 (fixedToFloat_inst/old_temp_25_and0000)
+     LUT4:I3->O            1   0.612   0.360  fixedToFloat_inst/old_temp_33_and00001_SW1 (N885)
+     LUT4:I3->O           10   0.612   0.780  fixedToFloat_inst/old_temp_33_and00001 (fixedToFloat_inst/N891)
+     LUT3:I2->O           19   0.612   0.952  fixedToFloat_inst/_old_fraction_119<6>1212 (fixedToFloat_inst/N150)
+     LUT4:I2->O           36   0.612   1.077  fixedToFloat_inst/old_temp_37_and00001 (fixedToFloat_inst/old_temp_37_and0000)
+     LUT4:I3->O            6   0.612   0.599  fixedToFloat_inst/_old_leadpos_35<0>1 (fixedToFloat_inst/_old_leadpos_35<0>)
+     LUT4:I2->O           17   0.612   0.962  fixedToFloat_inst/_old_fraction_119<4>142 (fixedToFloat_inst/N173)
+     LUT4:I1->O           17   0.612   0.923  fixedToFloat_inst/_old_fraction_119<10>1211 (fixedToFloat_inst/N126)
+     LUT4:I2->O           39   0.612   1.144  fixedToFloat_inst/old_temp_45_and00001 (fixedToFloat_inst/old_temp_45_and0000)
+     LUT4:I1->O            7   0.612   0.754  fixedToFloat_inst/old_temp_53_and00001 (fixedToFloat_inst/N135)
+     LUT3:I0->O           11   0.612   0.945  fixedToFloat_inst/old_temp_53_and00002 (fixedToFloat_inst/old_temp_53_and0000)
+     LUT3:I0->O            2   0.612   0.532  fixedToFloat_inst/old_temp_61_and0000121 (fixedToFloat_inst/N1121)
+     LUT3:I0->O           12   0.612   0.969  fixedToFloat_inst/old_temp_61_and000011 (fixedToFloat_inst/N136)
+     LUT3:I0->O           21   0.612   0.989  fixedToFloat_inst/old_temp_61_and00002 (fixedToFloat_inst/old_temp_61_and0000)
+     LUT3:I2->O            6   0.612   0.599  fixedToFloat_inst/old_temp_93_and000011 (fixedToFloat_inst/N130)
+     LUT4:I2->O           25   0.612   1.223  fixedToFloat_inst/old_temp_69_and00001 (fixedToFloat_inst/old_temp_69_and0000)
+     LUT4:I0->O            9   0.612   0.849  fixedToFloat_inst/old_temp_77_and00001 (fixedToFloat_inst/N911)
+     LUT4:I0->O           28   0.612   1.141  fixedToFloat_inst/old_temp_73_and00001 (fixedToFloat_inst/old_temp_73_and0000)
+     LUT4:I1->O            2   0.612   0.410  fixedToFloat_inst/old_temp_93_and00002 (fixedToFloat_inst/N148)
+     LUT4:I2->O            1   0.612   0.360  fixedToFloat_inst/old_temp_85_and00001_SW0 (N28)
+     LUT4:I3->O            5   0.612   0.690  fixedToFloat_inst/old_temp_85_and00001 (fixedToFloat_inst/N1011)
+     LUT4:I0->O            8   0.612   0.712  fixedToFloat_inst/old_temp_81_and00001 (fixedToFloat_inst/old_temp_81_and0000)
+     LUT4:I1->O            3   0.612   0.481  fixedToFloat_inst/_old_leadpos_79<1> (fixedToFloat_inst/_old_leadpos_79<1>)
+     LUT3:I2->O            6   0.612   0.572  fixedToFloat_inst/old_temp_93_and000031 (fixedToFloat_inst/N931)
+     LUT4:I3->O           13   0.612   0.988  fixedToFloat_inst/old_temp_93_and00004 (fixedToFloat_inst/old_temp_93_and0000)
+     LUT4:I0->O            5   0.612   0.607  fixedToFloat_inst/_old_leadpos_91<0>23 (fixedToFloat_inst/_old_leadpos_91<0>)
+     LUT4:I1->O            1   0.612   0.360  fixedToFloat_inst/temp_and00001_SW1 (N967)
+     LUT4:I3->O            6   0.612   0.721  fixedToFloat_inst/temp_and00001 (fixedToFloat_inst/N133)
+     LUT3:I0->O           19   0.612   1.074  fixedToFloat_inst/old_temp_101_and00001 (fixedToFloat_inst/old_temp_101_and0000)
+     LUT4:I0->O            4   0.612   0.529  fixedToFloat_inst/_old_leadpos_103<2>1 (fixedToFloat_inst/_old_leadpos_103<2>)
+     LUT3:I2->O            4   0.612   0.529  fixedToFloat_inst/old_leadpos_116_and000011 (fixedToFloat_inst/N921)
+     LUT3:I2->O            3   0.612   0.454  fixedToFloat_inst/old_temp_113_and00001 (fixedToFloat_inst/old_temp_113_and0000)
+     LUT4:I3->O            1   0.612   0.360  fixedToFloat_inst/_old_leadpos_111<1>_SW1 (N957)
+     LUT4:I3->O            4   0.612   0.651  fixedToFloat_inst/_old_leadpos_111<1> (fixedToFloat_inst/_old_leadpos_111<1>)
+     LUT4:I0->O            3   0.612   0.454  fixedToFloat_inst/old_leadpos_116_and0000_SW0 (N38)
+     LUT4:I3->O            3   0.612   0.481  fixedToFloat_inst/old_leadpos_116_and0000 (fixedToFloat_inst/old_leadpos_116_and0000)
+     LUT4:I2->O           13   0.612   0.866  fixedToFloat_inst/_old_fraction_119<0>211 (fixedToFloat_inst/N961)
+     LUT3:I2->O            6   0.612   0.599  fixedToFloat_inst/_old_fraction_119<0>21 (fixedToFloat_inst/N125)
+     LUT4:I2->O            6   0.612   0.638  fixedToFloat_inst/_old_fraction_119<4>211 (fixedToFloat_inst/N981)
+     LUT3:I1->O            5   0.612   0.541  fixedToFloat_inst/_old_fraction_119<4>41 (fixedToFloat_inst/N1141)
+     LUT4:I3->O            2   0.612   0.532  fixedToFloat_inst/_old_fraction_119<5>394_SW0 (N106)
+     LUT4:I0->O            4   0.612   0.651  fixedToFloat_inst/_old_fraction_119<5>363_SW0 (N380)
+     LUT4:I0->O            1   0.612   0.000  fixedToFloat_inst/_old_fraction_119<5>285_SW1_F (N813)
+     MUXF5:I0->O           4   0.278   0.651  fixedToFloat_inst/_old_fraction_119<5>285_SW1 (N574)
+     LUT4:I0->O            1   0.612   0.000  fixedToFloat_inst/_old_fraction_119<5>27_SW1_F (N857)
+     MUXF5:I0->O           1   0.278   0.426  fixedToFloat_inst/_old_fraction_119<5>27_SW1 (N630)
+     LUT3:I1->O            2   0.612   0.000  fixedToFloat_inst/_old_fraction_119<5>442 (fixedToFloat_inst/_old_fraction_119<5>)
+     FDE:D                     0.268          fixedToFloat_inst/fraction_5
+    ----------------------------------------
+    Total                     71.981ns (35.126ns logic, 36.854ns route)
+                                       (48.8% logic, 51.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              4.040ns (Levels of Logic = 1)
+  Source:            result_31 (FF)
+  Destination:       result<31> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: result_31 to result<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.514   0.357  result_31 (result_31)
+     OBUF:I->O                 3.169          result_31_OBUF (result<31>)
+    ----------------------------------------
+    Total                      4.040ns (3.683ns logic, 0.357ns route)
+                                       (91.2% logic, 8.8% route)
+
+=========================================================================
 
 
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 3.03 secs
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 19.86 secs
  
 --> 
 
 
-Total memory usage is 611552 kilobytes
+Total memory usage is 636172 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   44 (   0 filtered)
-Number of infos    :    3 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
 
